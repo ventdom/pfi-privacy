@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P.F.I. — Informativa sulla privacy</title>
+<style>
+  :root { --testo:#1a1a1a; --secondario:#555; --bordo:#e4e4e4; --verde:#4CAF50; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:32px 20px 64px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65; color:var(--testo); background:#fff;
+  }
+  main { max-width:720px; margin:0 auto; }
+  h1 { font-size:1.75rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:36px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--bordo); }
+  h3 { font-size:1rem; margin:22px 0 6px; }
+  .aggiornata { color:var(--secondario); font-size:.9rem; margin-bottom:28px; }
+  .rilievo { background:#f4faf4; border-left:3px solid var(--verde); padding:14px 16px; margin:20px 0; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:.94rem; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--bordo); vertical-align:top; }
+  th { background:#fafafa; font-weight:600; }
+  ul { padding-left:20px; }
+  li { margin:5px 0; }
+  code { background:#f4f4f4; padding:1px 5px; border-radius:3px; font-size:.9em; }
+  footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--bordo);
+           color:var(--secondario); font-size:.88rem; }
+  .en { margin-top:56px; padding-top:28px; border-top:3px solid var(--bordo); }
+  @media (prefers-color-scheme: dark) {
+    body { background:#111; color:#eee; }
+    h2, footer, .en { border-color:#333; }
+    th, td { border-color:#2a2a2a; }
+    th { background:#1a1a1a; }
+    code { background:#1e1e1e; }
+    .rilievo { background:#13210f; }
+    .aggiornata { color:#aaa; }
+    footer { color:#aaa; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>P.F.I. — Pet Food Indicator</h1>
+<p class="aggiornata">Informativa sulla privacy · ultimo aggiornamento: 13 settembre 2026</p>
+
+<div class="rilievo">
+  <strong>In breve.</strong> P.F.I. non richiede registrazione, non mostra pubblicità
+  e non traccia le persone. Le fotografie che scatti restano sul telefono e non
+  vengono mai inviate. Verso il nostro archivio partono solo i dati del prodotto
+  — codice a barre e lista ingredienti — insieme a un identificativo casuale che
+  non è collegato a te.
+</div>
+
+<h2>Chi tratta i dati</h2>
+<p>
+  Il titolare del trattamento è <strong>[IL TUO NOME]</strong>, sviluppatore
+  dell'applicazione P.F.I. — Pet Food Indicator, contattabile all'indirizzo
+  <strong>[LA TUA EMAIL]</strong>.
+</p>
+
+<h2>Che cosa fa l'app</h2>
+<p>
+  P.F.I. legge il codice a barre di un alimento per cani o gatti, ne recupera la
+  lista ingredienti e calcola un punteggio nutrizionale da 0 a 100. Quando il
+  prodotto non è presente in nessun archivio, l'app permette di fotografare
+  l'etichetta e leggerne il testo.
+</p>
+
+<h2>Dati trattati sul dispositivo, che non escono mai</h2>
+
+<h3>Fotocamera e immagini</h3>
+<p>
+  L'app usa la fotocamera per leggere codici a barre e per riconoscere il testo
+  delle etichette. Puoi anche scegliere una foto dalla galleria. In entrambi i
+  casi <strong>le immagini vengono elaborate esclusivamente sul telefono, non
+  vengono salvate e non vengono trasmesse ad alcun server</strong>. Il
+  riconoscimento avviene con le librerie ML Kit di Google, che funzionano
+  localmente senza inviare le immagini.
+</p>
+
+<h3>Archivio locale</h3>
+<p>
+  I prodotti analizzati, i collegamenti fra codici e il dizionario degli
+  ingredienti restano nella memoria del telefono. Si cancellano disinstallando
+  l'app oppure svuotandone i dati dalle impostazioni di Android.
+</p>
+
+<h3>Preferenze</h3>
+<p>
+  Specie dell'animale, nomi che hai scelto e lingua dell'interfaccia sono
+  memorizzati solo sul dispositivo.
+</p>
+
+<h2>Dati che escono dal dispositivo</h2>
+
+<h3>Ricerca di un prodotto</h3>
+<p>
+  Quando scansioni un codice, l'app lo invia a Open Pet Food Facts e Open Food
+  Facts, banche dati pubbliche e non commerciali, per recuperare le informazioni
+  del prodotto. Viene trasmesso solo il codice a barre.
+</p>
+
+<h3>Archivio condiviso</h3>
+<p>
+  Quando fotografi un'etichetta e confermi il testo, il prodotto viene inviato
+  al nostro archivio, così che gli altri utenti non debbano rifotografarlo.
+  Vengono trasmessi:
+</p>
+<table>
+  <tr><th>Dato</th><th>Perché</th></tr>
+  <tr><td>Codice a barre</td><td>identifica il prodotto</td></tr>
+  <tr><td>Nome e marca, se inseriti</td><td>rendono il prodotto riconoscibile</td></tr>
+  <tr><td>Lista ingredienti</td><td>è l'informazione che serve a calcolare il punteggio</td></tr>
+  <tr><td>Lingua dell'etichetta</td><td>serve a interpretare correttamente il testo</td></tr>
+  <tr><td>Identificativo casuale del dispositivo</td><td>limita gli invii automatici e gli abusi</td></tr>
+</table>
+
+<h3>L'identificativo casuale</h3>
+<p>
+  È un numero generato a caso alla prima apertura dell'app. <strong>Non è
+  l'identificativo pubblicitario, non è l'IMEI, non è collegato al tuo account
+  Google né a te.</strong> Serve solo a impedire che qualcuno riempia
+  l'archivio di dati inventati. Cambia se disinstalli e reinstalli l'app.
+</p>
+
+<h3>Dove sono conservati</h3>
+<p>
+  L'archivio condiviso è ospitato su Supabase, con server nell'Unione Europea
+  (Francoforte, Germania). Le comunicazioni avvengono in forma cifrata.
+</p>
+
+<h2>Dati diagnostici di terze parti</h2>
+<p>
+  L'app usa le librerie ML Kit di Google per riconoscere codici a barre e testo.
+  Queste librerie possono inviare a Google dati diagnostici sul proprio
+  funzionamento, secondo l'informativa privacy di Google. <strong>Le immagini
+  non vengono inviate.</strong>
+</p>
+
+<h2>Quello che NON facciamo</h2>
+<ul>
+  <li>Nessun account, nessuna registrazione, nessuna email richiesta</li>
+  <li>Nessuna pubblicità e nessun tracciamento pubblicitario</li>
+  <li>Nessuna raccolta di nome, indirizzo, numero di telefono o posizione</li>
+  <li>Nessuna profilazione e nessuna decisione automatizzata sulle persone</li>
+  <li>Nessuna vendita o cessione di dati a terzi</li>
+  <li>Nessuna fotografia trasmessa o conservata fuori dal telefono</li>
+</ul>
+
+<h2>Base giuridica e conservazione</h2>
+<p>
+  Il trattamento si fonda sul legittimo interesse a far funzionare il servizio
+  e a proteggerlo dagli abusi, ai sensi dell'articolo 6, paragrafo 1, lettera f
+  del Regolamento UE 2016/679. I dati di prodotto restano nell'archivio finché
+  il servizio esiste, perché costituiscono il servizio stesso. Gli
+  identificativi casuali degli invii vengono cancellati dopo dodici mesi.
+</p>
+
+<h2>I tuoi diritti</h2>
+<p>
+  Hai diritto di accesso, rettifica, cancellazione, limitazione e opposizione
+  secondo gli articoli da 15 a 22 del Regolamento. Scrivi a
+  <strong>[LA TUA EMAIL]</strong>: se indichi il codice a barre di un prodotto
+  che hai inviato, provvediamo a rimuoverlo o correggerlo.
+</p>
+<p>
+  Puoi inoltre proporre reclamo al Garante per la protezione dei dati personali
+  (<code>garanteprivacy.it</code>).
+</p>
+
+<h2>Minori</h2>
+<p>
+  L'app non è rivolta a minori di quattordici anni e non raccoglie
+  consapevolmente dati che li riguardano.
+</p>
+
+<h2>Modifiche</h2>
+<p>
+  Eventuali aggiornamenti saranno pubblicati su questa pagina, con la data in
+  alto aggiornata.
+</p>
+
+<!-- ============================================================= -->
+<section class="en">
+
+<h1>P.F.I. — Pet Food Indicator</h1>
+<p class="aggiornata">Privacy Policy · last updated: 13 September 2026</p>
+
+<div class="rilievo">
+  <strong>In short.</strong> P.F.I. requires no account, shows no advertising and
+  does not track people. Photos you take stay on your phone and are never
+  uploaded. Only product data — barcode and ingredient list — is sent to our
+  archive, together with a random identifier that is not linked to you.
+</div>
+
+<h2>Controller</h2>
+<p>
+  The data controller is <strong>[YOUR NAME]</strong>, developer of P.F.I. — Pet
+  Food Indicator, reachable at <strong>[YOUR EMAIL]</strong>.
+</p>
+
+<h2>What the app does</h2>
+<p>
+  P.F.I. scans the barcode of a cat or dog food, retrieves its ingredient list
+  and computes a nutritional score from 0 to 100. When a product is not found,
+  the app lets you photograph the label and read its text.
+</p>
+
+<h2>Data processed on the device only</h2>
+<p>
+  The camera is used to read barcodes and label text; you may also pick a photo
+  from your gallery. <strong>Images are processed entirely on the phone, are not
+  stored and are never transmitted.</strong> Recognition uses Google ML Kit,
+  which runs locally. Scanned products, barcode links, the ingredient dictionary
+  and your preferences are kept in the phone's own storage and are removed when
+  you uninstall the app or clear its data.
+</p>
+
+<h2>Data that leaves the device</h2>
+<p>
+  When you scan a code, the barcode alone is sent to Open Pet Food Facts and Open
+  Food Facts to retrieve product information.
+</p>
+<p>
+  When you photograph a label and confirm the text, the product is submitted to
+  our shared archive so that other users need not photograph it again. The
+  following is transmitted: barcode; product name and brand if you entered them;
+  ingredient list; label language; and a random device identifier.
+</p>
+<p>
+  The random identifier is generated at first launch. <strong>It is not the
+  advertising ID, not the IMEI, and not linked to your Google account or to
+  you.</strong> It exists only to limit abuse, and changes if you reinstall the
+  app. The archive is hosted on Supabase with servers in the European Union
+  (Frankfurt, Germany), and all communication is encrypted.
+</p>
+
+<h2>Third-party diagnostics</h2>
+<p>
+  Google ML Kit may send Google diagnostic data about its own operation, under
+  Google's privacy policy. <strong>Images are not sent.</strong>
+</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>No accounts, no registration, no email required</li>
+  <li>No advertising and no ad tracking</li>
+  <li>No collection of name, address, phone number or location</li>
+  <li>No profiling and no automated decisions about people</li>
+  <li>No sale or transfer of data to third parties</li>
+  <li>No photograph ever leaves the phone</li>
+</ul>
+
+<h2>Legal basis, retention and your rights</h2>
+<p>
+  Processing relies on the legitimate interest in operating the service and
+  protecting it from abuse, under Article 6(1)(f) GDPR. Product data remains for
+  as long as the service exists, since it constitutes the service itself; random
+  submission identifiers are deleted after twelve months.
+</p>
+<p>
+  You have the rights of access, rectification, erasure, restriction and
+  objection under Articles 15 to 22 GDPR. Write to
+  <strong>[YOUR EMAIL]</strong>, quoting the barcode of a product you submitted,
+  and we will remove or correct it. You may also lodge a complaint with your
+  national supervisory authority.
+</p>
+
+<h2>Children</h2>
+<p>
+  The app is not directed to children under fourteen and does not knowingly
+  collect their data.
+</p>
+
+</section>
+
+<footer>
+  P.F.I. — Pet Food Indicator · [IL TUO NOME] · [LA TUA EMAIL]
+</footer>
+
+</main>
+</body>
+</html>
